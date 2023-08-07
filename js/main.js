@@ -32,10 +32,11 @@ let check10 = document.getElementById('check10').innerHTML //traigo check10
 
 let popupContainer = document.getElementById('popup-container')
 
-tarea1.addEventListener('click', () => {
-    let valorInput = inputNombre.value
-    popup.innerHTML = 'Bien ' + inputNombre + ' terminaste de ' + tareaPendiente
-
+check1.addEventListener('click', (e) => {
+    if (e.target = "checkbox") {
+        let valorInput = inputNombre.value
+        alert('Bien ' + valorInput + ' terminaste de ' + tarea1)
+    }
 })
 
 
