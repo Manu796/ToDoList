@@ -12,16 +12,62 @@
 
 <body>
     <h1>Listadito de Tareas Pendientes</h1>
+    <!------------------- INPUT -------------------->
     <div class="input-nombre">
         <input type="text" placeholder="Ingresa tu nombre" id="input-nombre">
-
     </div>
-    <div class="lista-check">
-        <label id="tarea1">
+    <!-------------- CHECKBOX Y TAREAS ----------->
+    <div class="inbox">
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea1'>This is an inbox layout.</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea2'>Check one item</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea3'>Hold down your Shift key</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea4'>Check a lower item</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea5'>Everything inbetween should also be set to checked</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea6'>Try do it without any libraries</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea7'>Just regular JavaScript</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea8'>Good Luck!</p>
+        </div>
+        <div class="item">
+          <input type="checkbox">
+          <p id='tarea9'>Don't forget to tweet your result!</p>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <p id='tarea10'>Don't forget to tweet your result!</p>
+          </div>
+      </div>
+
+    <!-- <div class="lista-check">
+
+
+        <label class="item">
             <input class="input-check" type="checkbox">
             <span></span>
             <div>
-                <p class="tarea-pendiente">Ir al super</p>
+                <p id="tarea1" class="tarea-pendiente">Ir al super</p>
             </div>
         </label>
         <label>
@@ -61,7 +107,7 @@
             <span></span>
             <p id="tarea8" class="tarea-pendiente">Sacar la basura</p>
         </label>
-        <label>
+        <label >
             <input type="checkbox" class="input-check">
             <span></span>
             <p id="tarea9" class="tarea-pendiente">Comprar alimento a mascota</p>
@@ -71,9 +117,10 @@
             <span></span>
             <p id="tarea10" class="tarea-pendiente">Cambiar focos de casa</p>
         </label>
-    </div>
+    </div> -->
+    <!------------------- POPUP ---------------------->
     <div id="popup-container">
-        <p id="popup">Hola</p>
+        <p id="popup"></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
