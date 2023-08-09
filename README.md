@@ -1,2 +1,2 @@
 # ToDoList
- Listado de tareas pendientes - Reto 3 Winterhack (CodeaRock)
+ Listado de tareas pendientes - Reto 3 WinterHack (CodeaRock)
