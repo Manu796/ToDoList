@@ -5,127 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Pendientes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <h1>Listadito de Tareas Pendientes</h1>
     <!------------------- INPUT -------------------->
-    <div class="input-nombre">
-        <input type="text" placeholder="Ingresa tu nombre" id="input-nombre">
+    <div class="input-nombre" id="bienvenida">
+        <input type="text" placeholder="Ingresa tu nombre" id="nombre">
+        <button class="btn-primary" id="ingresar">Ingresar</button>
     </div>
     <!-------------- CHECKBOX Y TAREAS ----------->
-    <div class="inbox">
+    <div class="inbox" id="listado">
         <div class="item">
-          <input type="checkbox" id="check1">
-          <p id='tarea1'>This is an inbox layout.</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Ir al super</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check2">
-          <p id='tarea2'>Check one item</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Sacar a pasear a peshito</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check3">
-          <p id='tarea3'>Hold down your Shift key</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Arreglar puerta</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check4">
-          <p id='tarea4'>Check a lower item</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Service auto</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check5">
-          <p id='tarea5'>Everything inbetween should also be set to checked</p>
+            <input type="checkbox" id="check">
+            <plabel id='tarea'>Llamar al aguatero</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check6">
-          <p id='tarea6'>Try do it without any libraries</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Cortar el pasto</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check7">
-          <p id='tarea7'>Just regular JavaScript</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Pagar cuentas</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check8">
-          <p id='tarea8'>Good Luck!</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Ponerse a estudiar</label>
         </div>
         <div class="item">
-          <input type="checkbox" id="check9">
-          <p id='tarea9'>Don't forget to tweet your result!</p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Pintar dpto</label>
         </div>
         <div class="item">
-            <input type="checkbox" id="check10">
-            <p id='tarea10'>Don't forget to tweet your result!</p>
-          </div>
-      </div>
-
-    <!-- <div class="lista-check">
-
-
-        <label class="item">
-            <input class="input-check" type="checkbox">
-            <span></span>
-            <div>
-                <p id="tarea1" class="tarea-pendiente">Ir al super</p>
-            </div>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <div>
-                <p id="tarea2" class="tarea-pendiente">Comprar verduras</p>
-            </div>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea3" class="tarea-pendiente">Pagar los servicios</p>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea4" class="tarea-pendiente">Pagar alquiler</p>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea5" class="tarea-pendiente">Llamar a pepito</p>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea6" class="tarea-pendiente">Sacar a pasear a peshito</p>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea7" class="tarea-pendiente">Comprar ropa</p>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea8" class="tarea-pendiente">Sacar la basura</p>
-        </label>
-        <label >
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea9" class="tarea-pendiente">Comprar alimento a mascota</p>
-        </label>
-        <label>
-            <input type="checkbox" class="input-check">
-            <span></span>
-            <p id="tarea10" class="tarea-pendiente">Cambiar focos de casa</p>
-        </label>
-    </div> -->
-    <!------------------- POPUP ---------------------->
-    <div id="popup-container">
-        <p id="popup"></p>
+            <input type="checkbox" id="check">
+            <label id='tarea'>Pedir Vacaciones</label>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    <!------------------- POPUP ---------------------->
+    <!-- Button trigger modal -->
+    <div class="modal" tabindex="-1" id="popup-container" data-toggle="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bien!!</h5>
+                    <button class="close" id="cerrarModal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
     <script src="js/main.js"></script>
 </body>
 

@@ -1,42 +1,41 @@
-let inputNombre = document.getElementById('input-nombre') //traigo el input
-let popup = document.getElementById('popup') // traigo el Popup
-let tarea1 = document.getElementById('tarea1').innerHTML //traigo tarea1
-let check1 = document.getElementById('check1').innerHTML //traigo check1
+let inputNombre = document.getElementById('nombre') //traigo el input
+let ingresar = document.getElementById('ingresar') //traigo boton ingresar
+let popupContenedor = document.getElementById('popup-container') // traigo el PopupContainer
+let listado = document.getElementById('listado') //traigo div listado
+let bienvenida = document.getElementById('bienvenida') //traigo div bienvenida
+let cerrarModal = document.getElementById('cerrarModal') // btn cerrar modal
+let item = document.querySelectorAll('.item') //traigo todos los div con clase item
 
-let tarea2 = document.getElementById('tarea2').innerHTML  //traigo tarea2
-let check2 = document.getElementById('check2').innerHTML //traigo check2
+let check = document.getElementById('check').innerHTML //traigo check
+let tarea = document.getElementById('tarea').innerHTML //traigo tarea
 
-let tarea3 = document.getElementById('tarea3').innerHTML //traigo tarea3
-let check3 = document.getElementById('check3').innerHTML //traigo check3
+let nombreIngresado = nombre.value
+//Ingresa nombre y al dar click en boton ingresar desaparece pantalla inicial y aparece el listado
+ingresar.addEventListener('click', () => {
+    listado.style.display = 'block'
+    bienvenida.style.display = 'none'
+})
 
-let tarea4 = document.getElementById('tarea4').innerHTML //traigo tarea4
-let check4 = document.getElementById('check4').innerHTML //traigo check4
+item.forEach(tarea,()=>{
 
-let tarea5 = document.getElementById('tarea5').innerHTML //traigo tarea5
-let check5 = document.getElementById('check5').innerHTML //traigo check5
-
-let tarea6 = document.getElementById('tarea6').innerHTML //traigo tarea6
-let check6 = document.getElementById('check6').innerHTML //traigo check6
-
-let tarea7 = document.getElementById('tarea7').innerHTML //traigo tarea7
-let check7 = document.getElementById('check7').innerHTML //traigo check7
-
-let tarea8 = document.getElementById('tarea8').innerHTML //traigo tarea8
-let check8 = document.getElementById('check8').innerHTML //traigo check8
-
-let tarea9 = document.getElementById('tarea9').innerHTML //traigo tarea9
-let check9 = document.getElementById('check9').innerHTML //traigo check9
-
-let tarea10 = document.getElementById('tarea10').innerHTML //traigo tarea10
-let check10 = document.getElementById('check10').innerHTML //traigo check10
-
-let popupContainer = document.getElementById('popup-container')
-
-check1.addEventListener('click', (e) => {
-    if (e.target = "checkbox") {
-        let valorInput = inputNombre.value
-        alert('Bien ' + valorInput + ' terminaste de ' + tarea1)
-    }
 })
 
 
+//Al hacer click en el checkbox tacha la tarea pendiente
+document.addEventListener('click', (e) => {
+    if (e.target.id == 'check') {
+        popupContenedor.style.display = 'block'
+        let saludo = "Bien " + nombreIngresado + "!! Terminaste de " + tarea
+        var nuevoP = document.createElement('p')
+        var txt = document.createTextNode(saludo)
+        nuevoP.appendChild(txt)
+        tarea.appendChild(p)
+    }
+})
+
+//Al hacer click en boton cerrar modal se cierra
+document.addEventListener('click', (e) => {
+    if (e.target.id == 'cerrarModal') {
+        popupContenedor.style.display = 'none'
+    }
+})
