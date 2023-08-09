@@ -15,16 +15,18 @@ ingresar.addEventListener('click', () => {
     bienvenida.style.display = 'none'
 })
 
-item.forEach(task =>{
-    task.addEventListener("click", ()=>{
+//Escucha el click en cada tarea apretada y recibe como parametros nombre y contenido de la tarea
+item.forEach(task => {
+    task.addEventListener("click", () => {
         const label = task.querySelector('label')
         const tituloTarea = label.innerHTML
-        
+
         alertUser(nombre, tituloTarea)
     })
 })
 
-function alertUser(nombre, tituloTarea){
+//Tira un alert con el contenido del input y la tarea apretada
+function alertUser(nombre, tituloTarea) {
     alert(`Bien ${nombre.value}! terminaste de ${tituloTarea} !!`)
 }
 
@@ -34,20 +36,3 @@ document.addEventListener('click', (e) => {
         popupContenedor.style.display = 'none'
     }
 })
-
-
-
-
-//Al hacer click en el checkbox tacha la tarea pendiente
-// document.addEventListener('click', (e) => {
-//     if (e.target.id == 'check') {
-//         // popupContenedor.style.display = 'block'
-//         // alert(`${nombreIngresado} terminaste: ${tarea1}`)
-
-//         // let saludo = "Bien " + nombreIngresado + "!! Terminaste de " + tarea
-//         // var nuevoP = document.createElement('p')
-//         // var txt = document.createTextNode(saludo)
-//         // nuevoP.appendChild(txt)
-//         // tarea.appendChild(p)
-//     }
-// })
