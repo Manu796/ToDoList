@@ -16,20 +16,20 @@ ingresar.addEventListener('click', () => {
     bienvenida.style.display = 'none'
 })
 
-item.forEach(tarea,()=>{
+// item.forEach(tarea,()=>{
 
-})
+// })
 
 
 //Al hacer click en el checkbox tacha la tarea pendiente
 document.addEventListener('click', (e) => {
     if (e.target.id == 'check') {
         popupContenedor.style.display = 'block'
-        let saludo = "Bien " + nombreIngresado + "!! Terminaste de " + tarea
-        var nuevoP = document.createElement('p')
-        var txt = document.createTextNode(saludo)
-        nuevoP.appendChild(txt)
-        tarea.appendChild(p)
+        // let saludo = "Bien " + nombreIngresado + "!! Terminaste de " + tarea
+        // var nuevoP = document.createElement('p')
+        // var txt = document.createTextNode(saludo)
+        // nuevoP.appendChild(txt)
+        // tarea.appendChild(p)
     }
 })
 
